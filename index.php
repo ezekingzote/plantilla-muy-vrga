@@ -87,8 +87,8 @@
                       </div>
                     </div>
                     <div class="col-12">
-                      <a href="./dashboard.php" class="btn btn-primary w-100" type="submit">Login admin</a>
-                      <a href="./dashboardDocente.php" class="btn btn-success w-100 mt-3" type="submit">Login Docente</a>
+                      <a href="./dashboard.php" class="btn btn-outline-primary w-100" type="submit">Login admin</a>
+                      <a href="./dashboardDocente.php" class="btn btn-outline-success w-100 mt-3" type="submit">Login Docente</a>
                     </div>
 
                   </form>
