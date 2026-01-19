@@ -1,5 +1,5 @@
 <?php
-include './header.php';
+include './headerDocentes.php';
 ?>
 
 
@@ -10,7 +10,7 @@ include './header.php';
     <nav>
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item active">Dashboard</li>
+        <li class="breadcrumb-item active">Dashboard Docente</li>
       </ol>
     </nav>
   </div><!-- End Page Title -->
@@ -114,18 +114,14 @@ include './header.php';
 
         <!-- Recent Activity -->
         <div class="card">
-        
+
 
           <div class="card-body">
 
             <div class="d-flex justify-content-between align-items-center mb-3">
               <h5 class="card-title mb-0">
-                Actividad Reciente<span>| Hoy</span>
+                Actividad Reciente <span>| Esta semana</span>
               </h5>
-
-              <a href="#" class="btn btn-outline-dark p-0">
-                <i class="fa-solid fa-eye"></i><small> Todas la evidencias</small>
-              </a>
             </div>
 
             <div class="activity">
@@ -134,7 +130,7 @@ include './header.php';
                 <div class="activite-label">32 min</div>
                 <i class="bi bi-circle-fill activity-badge text-success align-self-start"></i>
                 <div class="activity-content">
-                  Roldan resubió una evidencia
+                  Federico revisó y aceptó la evidencia
                 </div>
               </div>
 
@@ -142,7 +138,7 @@ include './header.php';
                 <div class="activite-label">56 min</div>
                 <i class="bi bi-circle-fill activity-badge text-danger align-self-start"></i>
                 <div class="activity-content">
-                  Emmanuel ha subido una evidencia
+                  Federico revisó y rechazo la evidencia
                 </div>
               </div>
 
@@ -150,7 +146,7 @@ include './header.php';
                 <div class="activite-label">2 hrs</div>
                 <i class="bi bi-circle-fill activity-badge text-primary align-self-start"></i>
                 <div class="activity-content">
-                  Gabriel ha subido una evidencia
+                  Evidencia subida correctamente
                 </div>
               </div>
 
@@ -169,14 +165,13 @@ include './header.php';
           <h5 class="mb-1 fw-bold text-center">
             <p>GESTIÓN RÁPIDA</p>
           </h5>
-          <a href="./docentes-index.php" class="btn btn-primary"><i class="fa-solid fa-person-chalkboard"></i> Nuevo Docente</a>
-          <a href="./materias-index.php" class="btn btn-info mt-3"><i class="fa-solid fa-book-medical"></i> Nueva Asignatura</a>
+          <a href="./evidencias-docente-index.php" class="btn btn-primary"><i class="fa-solid fa-book-bookmark"></i> Nueva Evidencia</a>
+          <a href="./instumentacion-docente-index.php" class="btn btn-info mt-3"><i class="fa-solid fa-table-list"></i> Nueva ponderación</a>
         </div>
       </div>
 
     </div>
   </section>
-
 </main><!-- End #main -->
 
 <?php

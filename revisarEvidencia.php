@@ -1,5 +1,5 @@
 <?php
-include './header.php';
+include './headerDocentes.php';
 ?>
 
 
@@ -91,6 +91,12 @@ include './header.php';
                                     </div>
                                     <p class="small fw-bold mb-1">Examen</p>
                                 </div>
+                                <div class="list-group-item p-3">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="fw-bold text-primary small">Total de ponderación</span>
+                                        <span class="badge bg-dark">100%</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -99,7 +105,6 @@ include './header.php';
                             <h6 class="fw-bold text-muted small text-uppercase mb-3">
                                 Dictamen de revisión
                             </h6>
-
                             <textarea class="form-control mb-3" rows="3"
                                 placeholder="Observaciones o motivos del rechazo..."></textarea>
 
