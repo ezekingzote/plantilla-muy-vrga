@@ -26,6 +26,8 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -182,11 +184,41 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
-          <i class="bi bi-grid"></i>
+        <a class="nav-link " href="./dashboard.php">
+          <i class="fa-solid fa-grip"></i>
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
+      <li class="nav-item">
+        <a class="nav-link " href="./evidencias-index.php">
+          <i class="fa-solid fa-folder-open"></i>
+
+          <span>Evidencias</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link " href="./docentes-index.php">
+          <i class="fa-solid fa-chalkboard-user"></i>
+          <span>Docentes</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link " href="./materias-index.php">
+          <i class="fa-solid fa-book-open"></i>
+          <span>Materias</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link " href="./asignar-index.php">
+          <i class="fa-solid fa-book-open-reader"></i>
+          <span>Asignar Materias</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <!---
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
@@ -204,7 +236,8 @@
             </a>
           </li>
         </ul>
-      </li><!-- End Tables Nav -->
+      </li>
+      ---->
 
 
 
