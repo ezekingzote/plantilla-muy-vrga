@@ -6,91 +6,47 @@ include './headerDocentes.php';
 <main id="main" class="main">
 
     <div class="pagetitle">
-        <h1>Instrumentacion de Docente</h1>
+        <h1>Planes de estudio del docentes</h1>
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active">Administrar las evidencias de evaluación</li>
+                <li class="breadcrumb-item active">Ponderaciones</li>
             </ol>
         </nav>
-    </div><!-- End Page Title -->
-    <a href="./instrumentacion-docente-create.php" class="btn btn-outline-primary px-3">
-        <i class="bi bi-plus-lg me-1"></i> Nueva Ponderación
-    </a>
+    </div>
     <hr>
     <section class="section">
-        <div class="row">
-            <div class="col-12">
-                <div class="card border-0 shadow-sm">
+        <div class="row g-4">
 
-                    <div class="card-body p-0">
-                        <div class="table-responsive">
-                            <table id="tablaListaInstrumentacion" class="table table-hover align-middle mb-0">
-                                <thead class="bg-light">
-                                    <tr>
-                                        <th class="ps-4 py-3 border-0 text-secondary small text-uppercase fw-bold">Materia</th>
-                                        <th class="py-3 border-0 text-secondary small text-uppercase fw-bold">Unidad</th>
-                                        <th class="py-3 border-0 text-secondary small text-uppercase fw-bold text-center">Criterios</th>
-                                        <th class="py-3 border-0 text-secondary small text-uppercase fw-bold text-center">Ponderación</th>
-                                        <th class="pe-4 py-3 border-0 text-secondary small text-uppercase fw-bold text-center">Acciones</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="ps-4">
-                                            <div class="fw-bold text-dark">Backend</div>
-                                            <div class="text-muted small">Ingeniería en Sistemas</div>
-                                        </td>
-                                        <td>
-                                            <span class="badge rounded-pill bg-info bg-opacity-10 text-info px-3">Unidad 1</span>
-                                        </td>
-                                        <td class="text-center">
-                                            <span class="fw-semibold">4</span>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="d-flex flex-column align-items-center">
-                                                <span class="badge bg-success px-3 mb-1">100%</span>
-                                                <div class="progress w-50" style="height: 4px;">
-                                                    <div class="progress-bar bg-success" style="width: 100%"></div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="text-center"><button class="btn btn-sm btn-outline-warning"><i class="fa-solid fa-pen-to-square"></i></button>
-                                            <button class="btn btn-sm btn-outline-danger"><i class="fa-solid fa-trash-can"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="ps-4">
-                                            <div class="fw-bold text-dark">Inteligencia Artificial</div>
-                                            <div class="text-muted small">Ingeniería en Sistemas</div>
-                                        </td>
-                                        <td>
-                                            <span class="badge rounded-pill bg-info bg-opacity-10 text-info px-3">Unidad 1</span>
-                                        </td>
-                                        <td class="text-center">
-                                            <span class="fw-semibold">2</span>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="d-flex flex-column align-items-center">
-                                                <span class="badge bg-warning text-dark px-3 mb-1">45%</span>
-                                                <div class="progress w-50" style="height: 4px;">
-                                                    <div class="progress-bar bg-warning" style="width: 45%"></div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="text-center"><button class="btn btn-sm btn-outline-warning"><i class="fa-solid fa-pen-to-square"></i></button>
-                                            <button class="btn btn-sm btn-outline-danger"><i class="fa-solid fa-trash-can"></i></button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="card-footer bg-white border-top-0 py-3 text-muted small">
-                        Mostrando el registro actual de instrumentaciones cargadas.
+            <!-- Card Materia -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title mb-1">Programación Web</h5>
+                        <p class="text-muted mb-2">Grupo: 5 SIS</p>
+
+                        <ul class="list-unstyled small mb-3">
+                            <li><strong>Carrera:</strong> Ing. en Sistemas</li>
+                            <li><strong>Horario:</strong> Lun - Mié 10:00 - 12:00</li>
+                            <li><strong>Periodo:</strong> Ene - Jun 2026</li>
+                        </ul>
+
+                            <div class="btn-group" role="group">
+                                <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle mt-3" data-bs-toggle="dropdown" aria-expanded="false">
+                                     <i class="bi bi-bar-chart"></i> Plan por Unidad
+                                </button>
+                                <ul class="dropdown-menu w-100 text-center" aria-labelledby="btnGroupDrop1">
+                                    <li><a class="dropdown-item" href="./plan-unidad-docente.php">Unidad 1</a></li>
+                                </ul>
+                                
+                            </div>
+                        
                     </div>
                 </div>
             </div>
+        </div>
+
+
         </div>
     </section>
 

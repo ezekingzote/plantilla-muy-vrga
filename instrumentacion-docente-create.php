@@ -23,20 +23,12 @@ include './headerDocentes.php';
                     <div class="card-body p-4">
                         <div class="row g-3 mb-4 p-3 rounded-3 bg-light border">
                             <div class="col-md-6">
-                                <label class="form-label fw-bold text-secondary small text-uppercase">Materia Académica</label>
-                                <select class="form-select border-0 shadow-sm" required>
-                                    <option selected disabled>Elegir materia...</option>
-                                    <option>Backend</option>
-                                    <option>IA</option>
-                                </select>
+                                <label for="material" class="form-label fw-bold text-secondary small text-uppercase">Materia Académica</label>
+                                <input type="text" id="materia" name="materia" class="form-control" readonly value="Programación Web">
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label fw-bold text-secondary small text-uppercase">Unidad a Evaluar</label>
-                                <select class="form-select border-0 shadow-sm">
-                                    <option>Unidad 1</option>
-                                    <option>Unidad 2</option>
-                                    <option>Unidad 3</option>
-                                </select>
+                                <label for="unidad" class="form-label fw-bold text-secondary small text-uppercase">Unidad a Evaluar</label>
+                                <input type="text" id="unidad" name="unidad" class="form-control" readonly value="Unidad 1">
                             </div>
                         </div>
 
@@ -54,17 +46,17 @@ include './headerDocentes.php';
                                     <tr class="border-bottom">
                                         <td class="ps-3">
                                             <input type="text" class="form-control form-control-sm border-0 bg-light"
-                                                value="Entrevista técnica y/o participación">
+                                                value="Exámen">
                                         </td>
                                         <td>
                                             <div class="input-group input-group-sm w-75 mx-auto">
-                                                <input type="number" class="form-control border-0 bg-light text-center fw-bold" value="25">
+                                                <input type="number" class="form-control border-0 bg-light text-center fw-bold" value="50">
                                                 <span class="input-group-text border-0 bg-light small">%</span>
                                             </div>
                                         </td>
                                         <td>
                                             <input type="text" class="form-control form-control-sm border-0 bg-light"
-                                                value="Rúbrica de entrevista técnica">
+                                                value="Rubrica de Exámen">
                                         </td>
                                         <td class="text-center">
                                             <button class="btn btn-link text-danger p-0" title="Eliminar criterio">
@@ -75,11 +67,11 @@ include './headerDocentes.php';
                                     <tr class="border-bottom">
                                         <td class="ps-3">
                                             <input type="text" class="form-control form-control-sm border-0 bg-light"
-                                                value="Tareas y Practicas">
+                                                value="Trabajo en Clase">
                                         </td>
                                         <td>
                                             <div class="input-group input-group-sm w-75 mx-auto">
-                                                <input type="number" class="form-control border-0 bg-light text-center fw-bold" value="20">
+                                                <input type="number" class="form-control border-0 bg-light text-center fw-bold" value="30">
                                                 <span class="input-group-text border-0 bg-light small">%</span>
                                             </div>
                                         </td>
@@ -108,20 +100,20 @@ include './headerDocentes.php';
                         <div class="row align-items-center">
                             <div class="col-md-6">
                                 <div class="d-flex align-items-center">
-                                    <h4 class="mb-0 me-3 fw-bold text-primary">45%</h4>
+                                    <h4 class="mb-0 me-3 fw-bold text-primary">80%</h4>
                                     <div>
                                         <div class="progress" style="width: 150px; height: 8px;">
-                                            <div class="progress-bar bg-primary" style="width: 45%"></div>
+                                            <div class="progress-bar bg-primary" style="width: 80%"></div>
                                         </div>
                                         <span class="small text-danger fw-semibold mt-1 d-block">
-                                            <i class="bi bi-exclamation-triangle-fill me-1"></i> Falta 55% para el total
+                                            <i class="bi bi-exclamation-triangle-fill me-1"></i> Falta 20% para el total
                                         </span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 text-md-end mt-3 mt-md-0">
-                                <a href="./instumentacion-docente-index.php" class="btn btn-outline-danger me-2">Cancelar</a>
-                                <button type="button" class="btn btn-outline-success px-4 shadow">Guardar Configuración</button>
+                                <a href="./plan-unidad-docente.php" class="btn btn-outline-danger me-2">Cancelar</a>
+                                <button type="button" class="btn btn-outline-success px-4 shadow">Guardar Ponderación</button>
                             </div>
                         </div>
                     </div>

@@ -207,7 +207,7 @@
       <li class="nav-item">
         <a class="nav-link " href="./instumentacion-docente-index.php">
           <i class="fa-solid fa-clipboard-list"></i>
-          <span>Ponderaciones</span>
+          <span>Mis Planes de Estudio</span>
         </a>
       </li><!-- End Dashboard Nav -->
 

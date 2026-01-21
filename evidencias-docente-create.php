@@ -10,7 +10,7 @@ include './headerDocentes.php';
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="./evidencias-docente-index.php">Home</a></li>
-                <li class="breadcrumb-item active">Registrar un docente nuevo</li>
+                <li class="breadcrumb-item active">Crear una evidencia Nueva</li>
             </ol>
         </nav>
     </div><!-- End Page Title -->
@@ -67,31 +67,23 @@ include './headerDocentes.php';
                                 </select>
                             </div>
 
-                            <div class="col-12">
+                            <div class="col-6">
                                 <label class="form-label fw-semibold text-secondary small text-uppercase">Archivo de Evidencia (PDF)</label>
                                 <input type="file" class="form-control" accept=".pdf" required>
                                 <div class="form-text mt-2"><i class="bi bi-info-circle me-1"></i> Solo se permiten archivos con extensión .pdf</div>
                             </div>
 
-                            <div class="col-12">
-                                <div class="p-3 rounded-3 border bg-light d-flex align-items-center justify-content-between">
-                                    <div>
-                                        <label class="form-check-label fw-bold mb-0" for="checkRubrica">Enviar sin rúbrica</label>
-                                        <div class="small text-muted">Active esta opción si el documento no requiere evaluación de instrumento.</div>
-                                    </div>
-                                    <div class="form-check form-switch fs-4">
-                                        <input class="form-check-input" type="checkbox" id="checkRubrica" role="switch">
-                                    </div>
-                                </div>
+                            <div class="col-6">
+                                <label class="form-label fw-semibold text-secondary small text-uppercase">Archivo de Rúbrica (PDF)</label>
+                                <input type="file" class="form-control" accept=".pdf" required>
+                                <div class="form-text mt-2"><i class="bi bi-info-circle me-1"></i> Solo se permiten archivos con extensión .pdf</div>
                             </div>
 
-                            <div class="col-12" id="contenedorRubrica">
-                                <label class="form-label fw-semibold text-secondary small text-uppercase">Rúbrica de Instrumentación</label>
+                            <div class="col-12" id="contenedorRubrica">Plan de estudio</label>
                                 <select class="form-select" id="selectRubrica">
-                                    <option selected disabled>Elegir rúbrica correspondiente...</option>
-                                    <option>Rúbrica de reporte de prácticas</option>
-                                    <option>Rúbrica de examen escrito</option>
-                                    <option>Lista de cotejo - Tareas</option>
+                                    <option selected disabled>Elegir plan correspondiente...</option>
+                                    <option>Exámen escrito --- 50%</option>
+                                    <option>Trabajo en Clase --- 30%  </option>
                                 </select>
                             </div>
 
