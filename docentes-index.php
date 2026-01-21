@@ -50,7 +50,7 @@ include './header.php';
                                         </td>
                                         <td>
                                             <div class="form-check form-switch">
-                                                <input class="form-check-input" type="checkbox" id="{{ $item->id }}">
+                                                <input class="form-check-input" type="checkbox"">
                                             </div>
                                         </td>
 

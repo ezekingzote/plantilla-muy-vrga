@@ -48,7 +48,7 @@
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
-        <span class="d-none d-lg-block">NiceAdmin</span>
+        <span class="d-none d-lg-block">Evidencias</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -187,6 +187,12 @@
         <a class="nav-link " href="./dashboard.php">
           <i class="fa-solid fa-grip"></i>
           <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+      <li class="nav-item">
+        <a class="nav-link " href="./semestre.php">
+          <i class="fa-solid fa-school-circle-check"></i>
+          <span>Semestre</span>
         </a>
       </li><!-- End Dashboard Nav -->
       <li class="nav-item">
